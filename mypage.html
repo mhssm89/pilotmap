@@ -14,11 +14,11 @@
   <body>
     <div class="icon-bar">
       <a href="/"><img class="logo" src="./myicon.png" alt="pilo logo" /></a>
-      <button class="submit">Submit</button>
+      <button form="conf-form" onclick="!this.form && document.getElementById('conf-form').submit()" class="submit">Submit</button>
     </div>
-    <form>
+    <form id="conf-form" action="/handelconfig" method="POST" >
       <p style="margin-left: 5px">Configration set:</p>
-      <button type="button" class="collapsible">Time Zone</button>
+      <button type="submit" class="collapsible">Time Zone</button>
       <div class="content">
         <h3>Time zone Information</h3>
         <h4 style="color: red">current time and time zone information</h4>
